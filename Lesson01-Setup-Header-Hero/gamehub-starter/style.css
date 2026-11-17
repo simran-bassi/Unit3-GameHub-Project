@@ -55,18 +55,56 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
 
 /* STEP 4 · .logo
    Bigger than the links (1.6rem), bold, white, no underline. */
-
+.logo {
+   color: white;
+   font-size: 1.6rem;
+   font-weight: 700;
+   text-decoration: none;
+}
 
 /* STEP 5 · .hero
    At least 70vh tall, a background colour, white text.
    Text centered, and the content centered up and down. */
-
+.hero {
+   min-height: 70vh;
+   background-color: #1970c6;
+   color: white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 24px;
+}
 
 /* STEP 6 · .btn and .hero-buttons
    .btn: inline-block, padding 12px 28px, rounded corners, no underline, bold.
    Give .btn-primary and .btn-secondary different looks.
    .hero-buttons: the two buttons side by side, centered, 16px apart. */
+.btn {
+   display: inline-block;
+   padding: 12px 28px;
+   border-radius: 8px;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: 700;
+}
 
+.btn-primary {
+   background-color: #f59e0b;
+   color: #111827;
+}
+
+.btn-secondary {
+   border-color: white;
+   color: white;
+}
+
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+}
 
 /* Done early? Try other colours from the reference sheet (Colors tab).
    On day 2 we turn your colours into variables. */
